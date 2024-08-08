@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Sports Survey Form</h1>
+    <p id="description">Help us collecting information about your favourite sports!<p>
+      <form action="" method="post" id="survey-form">
+        <h2>Personal Information: </h2>
+        <label for="name" id="name-label" class="bold">Name <input type="text" id="name" name="name" required placeholder="Enter your name" />
+        </label>
+        <label for="email" id="email-label" class="bold">Email <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        </label>
+        <label for="number" id="number-label" class="bold">Age (optional)<input type="number" id="number" name="age" required placeholder="Age" min="10" max="100"/>
+        </label>
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="male"> 
+            <input type="radio" id="male" name="gender" checked value="1" class="inline"/> Male
+          </label>
+          <label for="female"> 
+            <input type="radio" id="female" name="gender" value="2" class="inline"/> Female
+          </label>
+          <label for="other"> 
+            <input type="radio" id="other" name="gender" value="3" class="inline"/> Other
+          </label>
+          <label for="none"> 
+            <input type="radio" id="none" name="gender" value="4" class="inline"/> Prefer not to say
+          </label>
+        </fieldset>
+
+        <h2>Sports Information:</h2>
+
+        <label for="dropdown" class="bold">
+          How often you play sport(s)?
+          <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">Few times in a day</option>
+            <option value="2">Once in a day</option>
+            <option value="3">Once in a week</option>
+            <option value="4">Once in a month</option>
+            <option value="5">I don't play that much...</option>
+          </select>
+        </label>
+
+        <fieldset name="favourite-sport">
+          <legend>What sport(s) do you like? (you can check multiple)</legend>
+          <label for="cricket">
+          <input type="checkbox" value="1" id="cricket" class="inline"/> Cricket
+        </label>
+        <label for="football">
+          <input type="checkbox" value="2" id="football" class="inline"/> Football
+        </label>
+        <label for="badminton">
+          <input type="checkbox" value="3" id"badminton" class="inline"/> Badminton
+        </label>
+        <label for="swimming">
+          <input type="checkbox" value="4" id="swimming" class="inline"/> Swimming
+        </label>
+        <label for="tennis">
+          <input type="checkbox" value="5" id="tennis" class="inline"/> Tennis
+        </label>
+        <label for="table-tennis">
+          <input type="checkbox" value="6" id="table-tennis" class="inline"/> Table Tennis
+        </label>
+        <label for="hockey">
+          <input type="checkbox" value="7" id="hockey" class="inline"/> Hockey
+        </label>
+        <label for="handball">
+          <input type="checkbox" value="8" id="handball" class="inline"/> Handball
+        </label>
+        <label for="other">
+          <input type="checkbox" value="0" id="other" class="inline"/> Other
+        </label>
+
+        </fieldset>
+
+        <label for="about" class="bold">
+          Write something about your favourite sport(s) ...
+          <textarea id="about" rows="3" cols="30" placeholder="I like Basket ball because..."></textarea>
+        </label>
+
+      <input type="submit" value="Submit" id="submit"/>
+      </form>
+  </body>
+</html>

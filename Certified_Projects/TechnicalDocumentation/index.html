@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <article>
+            <p>
+                Textual is a Rapid Application Development framework for Python, built by <a href="https://github.com/Textualize/textual">Textualize.io.</a>
+            </p>
+            <p>
+                Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal or a web browser!
+            </p>
+
+        </article>
+      </section>
+      <section id="installation" class="main-section">
+        <header>Installation</header>
+        <article>
+            <p>Here's how to install Textual.</p>
+            
+            <ul>
+                <li>
+                    <header>From PyPI</header>
+
+                    <p>You can install Textual via PyPI, with the following command:</p>
+                    <code>pip install textual</code>
+                    <p>If you plan on developing Textual apps, you should also install textual developer tools:</p>
+                    <code>pip install textual-dev</code>
+                </li>
+                <li>
+                    <header>From conda-forge</header>
+                    <p>Textual is also available on conda-forge. The preferred package manager for conda-forge is currently micromamba:</p>
+                    <code>micromamba install -c conda-forge textual</code>
+                    <p>And for the textual developer tools:</p>
+                    <code>micromamba install -c conda-forge textual-dev</code>
+                </li>
+            </ul>
+        </article>
+      </section>
+      <section id="app_basics" class="main-section">
+        <header>App Basics</header>
+        <article>
+            <p>
+                In this chapter we will cover how to use Textual's App class to create an application. Just enough to get you up to speed. We will go in to more detail in the following chapters.
+            </p>
+            <ul>
+                <li>
+                    <header>The App class</header>
+                    <p>
+                        The first step in building a Textual app is to import the App class and create a subclass. Let's look at the simplest app class:
+                    </p>
+                    <pre>
+                        <code>
+from textual.app import App
+
+
+class MyApp(App):
+    pass
+                        </code>
+                    </pre>
+                    
+                </li>
+                <li>
+                    <p>
+                        To run an app we create an instance and call run().
+                    </p>
+                    <pre>
+                        <code>
+from textual.app import App
+
+
+class MyApp(App):
+    pass
+
+
+if __name__ == "__main__":
+    app = MyApp()
+    app.run()
+                        </code>
+                    </pre>
+                    <p>
+                        Apps don't get much simpler than this—don't expect it to do much.
+                    </p>
+                </li>
+            </ul>
+        </article>
+      </section>
+      <section id="widgets" class="main-section">
+        <header>Widgets</header>
+        <article>
+            <p>
+                Welcome to the Textual widget gallery.
+            </p>
+
+            <p>
+                We have many more widgets planned, or you can build your own.
+            </p>
+        </article>
+      </section>
+      <section id="" class="main-section">
+        <header></header>
+      </section>
+    </main>
+  </body>
+</html>
